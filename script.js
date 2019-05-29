@@ -111,7 +111,7 @@ for (i; i < len; i++) {
 }
 
 
-//NESTED-LOOP///////
+//NESTED-LOOP///////  1 12 123/////
 
 var i = 1;
 var str = '';
@@ -123,6 +123,7 @@ for (i; i <= 5; i++) {
 console.log(str);
 
 
+//SERIES PRINT//////////// 1 22 33 ///
 
 
 var i = 1;
@@ -135,7 +136,7 @@ for (i; i <= 5; i++) {
 }
 console.log(str);
 
-
+//SERIES PRINT// 5 TO 54321
 var i = 1;
 var str = '';
 
@@ -149,7 +150,7 @@ console.log(str);
 
 
 
-
+//SWAPING//////////
 
 
 var a = 10, b = 20;
@@ -163,37 +164,7 @@ var b = c;
 console.log(a, b);
 
 
-/* var f1 = 0;
-var f2 = 1;
-var sum;
-
-for (i =2; i<= 10; i++) {
-
-    sum = f1 + f2;
-    f1 = f2;
-    f2 = sum;  
-
-}
-
-console.log(sum); */
-
-
-
-
-
-/* 
-var fib = []; // Initialize array!
-
-fib[0] = 0;
-fib[1] = 1;
-for (i = 2; i <= 10; i++) {
-  // Next fibonacci number = previous + one before previous
-  // Translated to JavaScript:
-  fib[i] = fib[i - 2] + fib[i - 1];
-  
-}
-console.log(fib); */
-
+//FIBONACCIS SERIES//////////////
 
 var a=0;
 var b=1;
