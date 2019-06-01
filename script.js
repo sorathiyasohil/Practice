@@ -245,14 +245,129 @@ var arr1 = [];
 var arr2 = [];
 
 
-for (i = 0; i <= arr.length; i++) {
-    if (a[i] % 2 == 0) {
+for (i = 0; i <= arr.length - 1; i++) {
+    if (arr[i] % 2 == 0) {
         arr2.push(arr[i]);
     } else {
         arr1.push(arr[i]);
     }
 }
 console.log(arr2, arr1);
+
+
+
+////////////OBJECT/////////////////
+
+var recipe = {
+    Mole: 'mojo',
+    Serves: 2,
+    Ingredients: ['bacon', 'salad', 'cheese'],
+
+}
+
+
+console.log('Mole :', recipe.Mole, '\n', 'Serves:', recipe.Serves, '\n', recipe.Ingredients);
+
+/////////////////////////////////
+
+var Books = new Array();
+
+
+Books[0] = { title: "The Hobbit ", author: "J.R.R. Tolkien", alreadyRead: true };
+Books[1] = { title: "The Lord of the Rings", author: "J.R.R. Tolkien", alreadyRead: false };
+console.log(Books[0].title, 'by', Books[0].author);
+console.log(Books[1].title, 'by', Books[1].author);
+
+for (var i = 0; i < Books.length; i++) {
+
+    if (Books[i].alreadyRead === true) {
+        console.log("\nyou already read", '"', Books[i].title, '"', 'by', Books[i].author);
+    } else {
+        console.log("You Stil need to Read", '"', Books[i].title, '"', 'by', Books[i].author);
+    }
+}
+
+
+
+//////////
+var student = { name: "David Rayy", sclass: "VI", rollno: 12 };
+
+console.log(Object.keys(student));
+
+////////////////
+
+
+class kitchen {
+    constructor(recipes) {
+        //  recipes = ['soda', 'bacon', 'cheese', 'meat'];
+        this.recipes = recipes;
+
+    }
+    displayRecipe() {
+        console.log(this.recipes);
+    }
+
+    totalCount() {
+        console.log(this.recipes.length);
+
+
+    }
+
+    displayRecipe1(a) {
+
+        console.log(this.recipes[a]);
+        return a.recipes;
+    }
+
+    removierecipe(x, y) {
+        console.log(this.recipes.splice(x, 1));
+        return x.recipes;
+    }
+
+    removeallrecipe(x, y) {
+        console.log(this.recipes.splice(x, y));
+        return x;
+    }
+
+}
+recipes = ['soda', 'bacon', 'cheese', 'meat'];
+var k = new kitchen(recipes);
+k.displayRecipe();
+k.totalCount();
+k.displayRecipe1(3);
+k.removierecipe(2);
+k.removeallrecipe();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
